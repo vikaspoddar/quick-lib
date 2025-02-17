@@ -1,3 +1,5 @@
+mod person;
+
 pub fn public_function() {
     println!("called `public_function()`");
 }
