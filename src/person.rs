@@ -1,7 +1,7 @@
 pub struct Person {
-    name: String,
-    age: u8,
-    gender: Gender,
+    pub name: String,
+    pub age: u8,
+    pub gender: Gender,
 }
 
 pub enum Gender {
