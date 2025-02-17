@@ -1,9 +1,10 @@
 pub struct Person {
-    pub name: String,
-    pub age: u8,
-    pub gender: Gender,
+    name: String,
+    age: u8,
+    gender: Gender,
 }
 
+#[derive(Clone, Copy)]
 pub enum Gender {
     Male,
     Female,
@@ -16,5 +17,11 @@ impl Person {
     }
     pub fn get_name(&self) -> &String {
         &self.name
+    }
+    pub fn get_age(&self) -> u8 {
+        self.age
+    }
+    pub fn get_gender(&self) -> Gender {
+        self.gender
     }
 }
